@@ -1,0 +1,31 @@
+﻿<Page x:Class="SkySchool3.Pages.AddEditPagePlan"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SkySchool3.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="825" d:DesignWidth="1100"
+      Title="AddEditPagePlan">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="825" Width="1100">
+        <TextBlock Text="Информация об плане" FontSize="50" Height="70" Width="560" Margin="270,162,270,593"/>
+        <TextBlock Text="Выберите дисциплину:" FontSize="25" Height="40" Width="285" Margin="60,237,755,548"></TextBlock>
+        <DataGrid x:Name="DGDis" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Comic Sans MS" Height="100" Width="690" Margin="350,237,60,488">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дисциплина" Binding="{Binding Discipline.Name}" Width="*"/>
+                <DataGridTextColumn Header="Тип Занятия" Binding="{Binding Lesson_Type.Type}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Text="Выберите дату занятия:" FontSize="25" Height="40" Width="285" Margin="60,342,755,443"></TextBlock>
+        <Calendar x:Name="calendar1" Foreground="White" Height="198" Width="292" OpacityMask="White" Background="White" BorderBrush="Black" Margin="350,342,458,285" />
+        <TextBlock Text="Выберите время занятия:" FontSize="25" Height="40" Width="305" Margin="647,342,148,443"></TextBlock>
+        <ComboBox x:Name="CBTime" Height="40" Width="130" Margin="736,382,234,403"/>
+        <TextBlock Text="Выберите группу:" FontSize="25" Height="40" Width="285" Margin="647,455,168,330" ></TextBlock>
+        <ComboBox x:Name="CBGrupp" Text="{Binding Group_Number}" DisplayMemberPath="Group_Number" Height="40" Width="130" Margin="736,500,234,285" />
+        <TextBlock Text="Описание занятия:" FontSize="25" Width="285" Height="40" Margin="60,545,755,240"/>
+        <TextBox x:Name="TxtDiscription" Margin="350,545,60,100"/>
+        <Button x:Name="BtnSave" Content="Сохранить" Click="BtnSave_Click" Margin="435,735,435,30"></Button>
+        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgBck" ToolTip="Назад" Stretch="Fill" Source="/SkySchool3;component/Resources/Bck.png" MouseDown="ImgBck_MouseDown" Margin="980,51,60,714" />
+    </Grid>
+</Page>

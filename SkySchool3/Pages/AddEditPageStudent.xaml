@@ -5,15 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SkySchool3.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="779" d:DesignWidth="1006"
+      d:DesignHeight="825" d:DesignWidth="1100"
       Title="AddEditPageStudent">
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="750" Width="1000">
-        <TextBlock Text="Информация о студенте" FontSize="50" Height="70" Margin="162,122,162,558"/>
-        <Button x:Name="BtnSave" Content="Сохранить" Margin="385,639,385,51" Click="BtnSave_Click"></Button>
-        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgBck" ToolTip="Назад" Stretch="Fill" Margin="798,30,142,660" Source="/SkySchool3;component/Resources/Bck.png" MouseDown="ImgBck_MouseDown" />
-        <TextBlock Text="ФИО:" FontSize="30" Margin="60,262,742,448"></TextBlock>
-        <TextBox Text="{Binding Full_Name}" x:Name="TxtFullName" MaxLength="150" Width="400" Height="40" Margin="300,262,300,448"/>
-        <TextBlock Text="Номер группы:" FontSize="30" Margin="60,332,725,378"></TextBlock>
-        <ComboBox x:Name="ComboBoxNG" Text="{Binding Group.Group_Name}" DisplayMemberPath="Group_Name" Margin="300,332,300,375" ></ComboBox>
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="825" Width="1100">
+        <TextBlock Text="Информация о студенте" FontSize="50" Width="590" Height="70" Margin="162,162,162,593"/>
+        <Button x:Name="BtnSave" Content="Сохранить" Margin="435,735,435,30" Click="BtnSave_Click"></Button>
+        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgBck" ToolTip="Назад" Stretch="Fill" Margin="980,30,60,735" Source="/SkySchool3;component/Resources/Bck.png" MouseDown="ImgBck_MouseDown" />
+        <TextBlock Text="ФИО:" FontSize="25" Width="200" Height="40" Margin="60,238,840,547"></TextBlock>
+        <TextBox Text="{Binding Full_Name}" x:Name="TxtFullName" MaxLength="150" Width="775" Height="40" Margin="265,238,60,547"/>
+        <TextBlock Text="Номер группы:" FontSize="25" Width="200" Height="40" Margin="60,284,840,501"></TextBlock>
+        <ComboBox x:Name="ComboBoxNG" Text="{Binding Group.Group_Name}" DisplayMemberPath="Group_Name" Margin="265,284,60,501" ></ComboBox>
     </Grid>
 </Page>

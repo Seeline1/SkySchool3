@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -164,6 +165,11 @@ namespace SkySchool3.Pages
             {
                 _context.User.Add(new User()
                 { Full_Name = TxtFullName.Text, Login = TxtLogin.Text, Password = TxtPassword.Text, Role = TxtRole.Text });
+                string log = TxtLogin.Text;
+                string subPath = "reports\\" + log;
+                string subPath2 = "plans\\" + log;
+                Directory.CreateDirectory(subPath);
+                Directory.CreateDirectory(subPath2);
             }
             else
             {
@@ -172,6 +178,13 @@ namespace SkySchool3.Pages
                 userToUpdate.Password = TxtPassword.Text;
                 userToUpdate.Role = TxtRole.Text;
                 userToUpdate.Full_Name = TxtFullName.Text;
+                //string log2 = TxtLogin.Text;
+                //string subPath = "reports\\" + log;
+                //string subPath2 = "reports\\" + log2;
+                //MessageBox.Show(subPath + 8);
+                //MessageBox.Show(subPath2 + 9);
+                //Directory.Move(subPath, subPath2);
+                //Directory.
             }
 
             try

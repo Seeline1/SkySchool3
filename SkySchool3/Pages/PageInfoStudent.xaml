@@ -5,14 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SkySchool3.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="779" d:DesignWidth="1006"
+      d:DesignHeight="825" d:DesignWidth="1100"
       Title="PageInfoStudent" IsVisibleChanged="Page_IsVisibleChanged">
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="750" Width="1000">
-        <TextBlock Text="Студенты" FontSize="50" Margin="324,162,324,518"></TextBlock>
-        <Button x:Name="BtnAdd" Content="Добавить" Margin="230,639,540,51" Click="BtnAdd_Click" ></Button>
-        <Button x:Name="BtnDel" Content="Удалить" Margin="540,639,230,51" Click="BtnDel_Click" ></Button>
-        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgHome" ToolTip="Профиль" Stretch="Fill" Margin="798,30,142,660" Source="/SkySchool3;component/Resources/Home.png" MouseDown="ImgHome_MouseDown" />
-        <DataGrid FontSize="17" x:Name="DGridStudents" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Comic Sans MS" Margin="60,262,60,128" >
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="825" Width="1100">
+        <TextBlock Text="Студенты" FontSize="50" Width="230" Height="70" Margin="435,162,435,593"></TextBlock>
+        <Button x:Name="BtnAdd" Content="Добавить" Margin="245,735,625,30" Click="BtnAdd_Click" ></Button>
+        <Button x:Name="BtnDel" Content="Удалить" Margin="625,735,245,30" Click="BtnDel_Click" ></Button>
+        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgHome" ToolTip="Профиль" Stretch="Fill" Margin="980,30,60,735" Source="/SkySchool3;component/Resources/Home.png" MouseDown="ImgHome_MouseDown" />
+        <DataGrid FontSize="17" x:Name="DGridStudents" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Comic Sans MS" Margin="60,237,60,100" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер группы" Width="150" Binding="{Binding Group.Group_Number}"></DataGridTextColumn>
                 <DataGridTextColumn Header="ФИО" Binding="{Binding Full_Name}" Width="*"></DataGridTextColumn>

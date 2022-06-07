@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -55,7 +56,6 @@ namespace SkySchool3.Pages
                     _context.User.RemoveRange(UsersForRemoving);
                     await _context.SaveChangesAsync();
                     MessageBox.Show("Данные удалены!");
-
                     DGridUsers.ItemsSource = _context.User.ToList();
                 }
                 catch (Exception ex)

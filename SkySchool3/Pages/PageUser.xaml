@@ -5,27 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SkySchool3.Pages"
        mc:Ignorable="d" 
-      d:DesignHeight="779" d:DesignWidth="1006"
+      d:DesignHeight="825" d:DesignWidth="1100"
       Title="PageUser" IsVisibleChanged="Page_IsVisibleChanged">
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="750" Width="1000">
-        <TextBlock Text="Профиль" FontSize="50" Width="235" Height="70" Margin="382,162,382,518"></TextBlock>
-        <Button x:Name="MyPlan" Content="Мои планы" Margin="60,51,710,639" Click="MyPlan_Click"></Button>
-        <Button x:Name="MyReport" Content="Мои отчёты" Margin="385,51,385,639" Click="MyReport_Click"></Button>
-        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgOut" ToolTip="Выйти из профиля" Stretch="Fill" Margin="798,51,142,639" Source="/SkySchool3;component/Resources/Out.png" MouseDown="ImgOut_MouseDown" />
-        <TextBlock Text="Имя:" FontSize="30" Margin="60,262,665,448"></TextBlock>
-        <TextBlock Text="Логин:" FontSize="30" Margin="60,362,665,348"></TextBlock>
-        <TextBlock Text="Пароль:" FontSize="30" Margin="60,442,665,268"></TextBlock>
-        <TextBlock Text="Роль:" FontSize="30" Margin="60,522,665,188"></TextBlock>
-        <TextBlock Text="Мои дисциплины:" FontSize="30" Margin="60,602,665,108"></TextBlock>
-        <TextBlock x:Name="TBName" Text="{Binding Full_Name}" TextWrapping="Wrap" FontSize="30" Margin="340,262,60,406"></TextBlock>
-        <TextBlock x:Name="TBLogin" Text="{Binding Login}" FontSize="30" Margin="340,362,60,348"></TextBlock>
-        <TextBlock x:Name="TBRole" Text="{Binding Role}" FontSize="30" Margin="340,522,60,188"></TextBlock>
-        <TextBlock x:Name="TBParol" Text="{Binding Password}" FontSize="30" Margin="340,442,110,268"></TextBlock>
-        <CheckBox x:Name="CheckPass" Width="16" Height="16" Margin="924,456,60,278" Checked="CheckPass_Checked" Unchecked="CheckPass_Unchecked" ToolTip="Видимость пароля" IsChecked="True"></CheckBox>
-        <DataGrid FontSize="17" x:Name="DGridDisciplines" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Comic Sans MS" Margin="340,602,60,30">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="825" Width="1100">
+        <TextBlock Text="Профиль" FontSize="50" Width="235" Height="70" Margin="432.5,162,432.5,593"></TextBlock>
+        <Button x:Name="MyPlan" Content="Мои планы" Margin="150,66,720,699" Click="MyPlan_Click"></Button>
+        <Button x:Name="MyReport" Content="Мои отчёты" Margin="435,66,435,699" Click="MyReport_Click"></Button>
+        <Image Visibility="Visible" Width="60" Height="60" x:Name="ImgOut" ToolTip="Выйти из профиля" Stretch="Fill" Margin="805,66,235,699" Source="/SkySchool3;component/Resources/Out.png" MouseDown="ImgOut_MouseDown" />
+        <TextBlock Text="Имя:" FontSize="25" Width="230" Height="40" Margin="60,237,810,548"></TextBlock>
+        <TextBlock Text="Логин:" FontSize="25" Width="230" Height="40" Margin="60,282,810,503"></TextBlock>
+        <TextBlock Text="Пароль:" FontSize="25" Width="230" Height="40" Margin="60,374,810,411"></TextBlock>
+        <TextBlock Text="Роль:" FontSize="25" Width="230" Height="40" Margin="60,327,810,458"></TextBlock>
+        <TextBlock Text="Мои дисциплины:" FontSize="25" Width="230" Height="40" Margin="60,419,810,366"></TextBlock>
+        <TextBlock x:Name="TBName" Text="{Binding Full_Name}" TextWrapping="Wrap" FontSize="25" Width="745" Height="40" Margin="295,237,60,548"></TextBlock>
+        <TextBlock x:Name="TBLogin" Text="{Binding Login}" FontSize="25" Width="745" Height="40" Margin="295,282,60,503"></TextBlock>
+        <TextBlock x:Name="TBRole" Text="{Binding Role}" FontSize="25" Width="745" Height="40" Margin="295,327,60,458"></TextBlock>
+        <TextBlock x:Name="TBParol" Text="{Binding Password}" FontSize="25" Width="724" Height="40" Margin="295,374,81,411"></TextBlock>
+        <CheckBox x:Name="CheckPass" Width="16" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Checked="CheckPass_Checked" Unchecked="CheckPass_Unchecked" ToolTip="Видимость пароля" IsChecked="True" Margin="1024,373,60,412"/>
+        <DataGrid FontSize="17" x:Name="DGridDisciplines" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Comic Sans MS" Margin="295,419,60,51">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Дисциплина" Binding="{Binding Discipline.Name}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Тип Занятия" Binding="{Binding Lesson_Type.Type}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Тип Занятия" Binding="{Binding Lesson_Type.Type}" Width="200"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SkySchool3.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="779" d:DesignWidth="1006"
+      d:DesignHeight="825" d:DesignWidth="1100"
       Title="PageAuthorization">
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="750" Width="1000">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="825" Width="1100">
         <TextBlock FontSize="40" Text="Логин" Width="125" Height="60" Margin="210,312,665,378"></TextBlock>
         <TextBlock FontSize="40" Text="Пароль" Width="155" Height="60" Margin="210,403,635,287"></TextBlock>
         <TextBlock FontSize="50" Text="Авторизация" Width="310" Height="70" Margin="345,162,345,518"></TextBlock>

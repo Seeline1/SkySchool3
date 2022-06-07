@@ -30,7 +30,7 @@
 
         <Style TargetType="TextBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-            <Setter Property="FontSize" Value="27"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
@@ -50,7 +50,7 @@
 
         <Style TargetType="PasswordBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-            <Setter Property="FontSize" Value="27"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type PasswordBox}">
@@ -70,7 +70,7 @@
 
         <Style TargetType="ComboBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-            <Setter Property="FontSize" Value="27"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
         </Style>
     </Application.Resources>
 </Application>

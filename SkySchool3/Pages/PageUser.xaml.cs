@@ -63,12 +63,12 @@ namespace SkySchool3.Pages
 
         private void MyReport_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.MainFrame.Navigate(new PageInfoReport());
+            Manager.MainFrame.Navigate(new AddEditPageReport());
         }
 
         private void MyPlan_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.MainFrame.Navigate(new PageInfoPlan());
+            Manager.MainFrame.Navigate(new AddEditPagePlan());
         }
 
         public void Dispose()
